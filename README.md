@@ -41,4 +41,4 @@ Esse projeto está hospedado na [Vercel](https://vercel.com/).
 
 ---
 
-Desenvolvido por Breno & Felipe · Vertigo Discos 🎶
+Desenvolvido por ANNA BEATRIZ SILVA LIMA· 
