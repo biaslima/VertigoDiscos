@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gotahm:wght@400;700&display=swap");
+
+:root {
+  --cor-fundo: #4a007f;
+  --cor-fundo-escuro: #4a007f;
+  --cor-fundo-card: #ffffff;
+  --cor-primaria: #ffffff;
+  --cor-secundaria: #ffd000;
+  --cor-texto: #f0f0f0;
+  --cor-texto-escuro: #1a0030;
+  --cor-destaque: #ff00cc;
+  --cor-neon-amarelo: #ffd000;
+  --cor-neon-rosa: #ff00cc;
+  --fonte-titulo: "Bungee Shade", sans-serif;
+  --fonte-logo: "Gotham", sans-serif;
+  --fonte-corpo: "Righteous", sans-serif;
+  --sombra-neon: 0 0 10px #ffd000, 0 0 20px #ffd000aa, 0 0 40px #ffd00055;
+  --sombra-card: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 2px #ffd00033;
+  --raio: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-fundo);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, #9400e655 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, #ff00cc22 0%, transparent 50%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(255, 208, 0, 0.03) 40px,
+      rgba(255, 208, 0, 0.03) 41px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 40px,
+      rgba(255, 208, 0, 0.03) 40px,
+      rgba(255, 208, 0, 0.03) 41px
+    );
+  color: var(--cor-texto);
+  font-family: var(--fonte-corpo);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  margin: 0;
+}
+
+button {
+  font-family: var(--fonte-corpo);
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font-family: var(--fonte-corpo);
+}
+
+a {
+  text-decoration: none;
+}

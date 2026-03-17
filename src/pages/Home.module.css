@@ -1,0 +1,123 @@
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 60px 40px 20px;
+}
+
+.titulo {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  color: var(--cor-secundaria);
+  text-shadow: var(--sombra-neon);
+  letter-spacing: 4px;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  font-family: var(--fonte-corpo);
+  font-size: 1rem;
+  color: var(--cor-destaque);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.card {
+  background-color: var(--cor-fundo-card);
+  border-radius: var(--raio);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  text-align: left;
+  box-shadow: var(--sombra-card);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 2px var(--cor-secundaria),
+    var(--sombra-neon);
+}
+
+.cardVendido {
+  opacity: 0.6;
+  filter: grayscale(40%);
+}
+
+.foto {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+.semFoto {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, #2a0050, #6b00b8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.cardInfo {
+  padding: 14px 16px 16px;
+}
+
+.cardTitulo {
+  font-family: var(--fonte-titulo);
+  font-size: 0.95rem;
+  color: var(--cor-texto-escuro);
+  text-shadow: var(--sombra-neon);
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardArtista {
+  font-size: 0.8rem;
+  color: #6b00b8;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardPreco {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--cor-fundo-escuro);
+}
+
+.badgeVendido {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--cor-destaque);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
