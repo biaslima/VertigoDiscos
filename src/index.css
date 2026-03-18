@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Alfa+Slab+One&family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gotahm:wght@400;700&display=swap");
 
 :root {
@@ -11,7 +11,7 @@
   --cor-texto-escuro: #1a0030;
   --cor-destaque: #ff00cc;
   --cor-neon-amarelo: #ffd000;
-  --cor-neon-rosa: #ff00cc;
+  --cor-neon-rosa: #b80093;
   --fonte-titulo: "Bungee Shade", sans-serif;
   --fonte-logo: "Gotham", sans-serif;
   --fonte-corpo: "Righteous", sans-serif;

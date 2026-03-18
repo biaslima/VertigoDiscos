@@ -84,9 +84,11 @@
 
 .cardTitulo {
   font-family: var(--fonte-corpo);
-  font-size: clamp(0.75rem, 1.5vw, 0.95rem);
-  color: var(--cor-fundo-escuro);
-  text-shadow: var(--sombra-neon);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: var(--cor-secundaria);
+  -webkit-text-stroke: 1.2px #4a007f;
+  text-shadow: 2px 2px 0px var(--cor-secundaria);
+  min-height: 2.6rem;
   margin-bottom: 2px;
   overflow: hidden;
   display: -webkit-box;
