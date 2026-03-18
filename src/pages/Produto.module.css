@@ -17,7 +17,9 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .voltar:hover {
@@ -50,7 +52,9 @@
   object-fit: cover;
   border-radius: var(--raio);
   display: block;
-  box-shadow: 0 0 0 3px var(--cor-secundaria), var(--sombra-neon);
+  box-shadow:
+    0 0 0 3px var(--cor-secundaria),
+    var(--sombra-neon);
 }
 
 .miniaturas {
@@ -183,7 +187,9 @@
   font-size: 0.95rem;
   letter-spacing: 1px;
   font-weight: bold;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
   background: #25d366;
   color: white;
   border: none;
@@ -223,7 +229,9 @@
   font-size: 0.8rem;
   letter-spacing: 1px;
   border: none;
-  transition: transform 0.15s, opacity 0.15s;
+  transition:
+    transform 0.15s,
+    opacity 0.15s;
 }
 
 .btnAdmin:hover {
@@ -244,4 +252,10 @@
 .btnVendido {
   background: var(--cor-destaque);
   color: white;
+}
+
+@media (max-width: 640px) {
+  .carrossel {
+    position: static;
+  }
 }

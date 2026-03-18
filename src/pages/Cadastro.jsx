@@ -62,7 +62,7 @@ export default function Cadastro() {
         titulo,
         artista,
         fotos: urls,
-        preco: Number(preco),
+        preco: Number(preco.replace(/\D/g, "")) / 100,
         prensagem,
         estadoDisco,
         estadoCapa,
@@ -77,6 +77,15 @@ export default function Cadastro() {
       alert("Erro ao cadastrar disco");
     }
     setLoading(false);
+  }
+
+  function formatarPreco(valor) {
+    const apenasDigitos = valor.replace(/\D/g, "");
+    const numero = Number(apenasDigitos) / 100;
+    return new Intl.NumberFormat("pt-BR", {
+      style: "currency",
+      currency: "BRL",
+    }).format(numero);
   }
 
   return (
@@ -136,10 +145,9 @@ export default function Cadastro() {
           <label className={styles.label}>Preço (R$) *</label>
           <input
             className={styles.input}
-            type="number"
+            type="text"
             value={preco}
-            onChange={(e) => setPreco(e.target.value)}
-            required
+            onChange={(e) => setPreco(formatarPreco(e.target.value))}
           />
         </div>
 
