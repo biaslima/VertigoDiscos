@@ -56,7 +56,9 @@
   padding: 12px 16px;
   color: white;
   font-size: 1rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
   outline: none;
 }
 
@@ -84,10 +86,16 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 8px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .btnEntrar:hover {
   transform: translateY(-2px);
   box-shadow: var(--sombra-neon);
+}
+
+.form {
+  width: 100%;
 }
