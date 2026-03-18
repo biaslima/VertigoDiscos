@@ -83,14 +83,16 @@
 }
 
 .cardTitulo {
-  font-family: var(--fonte-titulo);
-  font-size: 0.95rem;
-  color: var(--cor-texto-escuro);
+  font-family: var(--fonte-corpo);
+  font-size: clamp(0.75rem, 1.5vw, 0.95rem);
+  color: var(--cor-fundo-escuro);
   text-shadow: var(--sombra-neon);
   margin-bottom: 2px;
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .cardArtista {

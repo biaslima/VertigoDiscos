@@ -16,6 +16,7 @@
   --fonte-logo: "Gotham", sans-serif;
   --fonte-corpo: "Righteous", sans-serif;
   --sombra-neon: 0 0 10px #ffd000, 0 0 20px #ffd000aa, 0 0 40px #ffd00055;
+  --sombra-neon-rosa: 0 0 10px #ff00cc, 0 0 20px #b81999, 0 0 40px #891872;
   --sombra-card: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 2px #ffd00033;
   --raio: 16px;
 }
