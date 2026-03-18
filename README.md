@@ -1,16 +1,44 @@
-# React + Vite
+# Vertigo Discos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Catálogo online de discos de vinil usados e raridades, com painel administrativo protegido.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Catálogo público com busca visual por cards
+- Página de detalhe com carrossel de fotos
+- Botões de compra direto no WhatsApp
+- Painel admin protegido por login
+- Cadastro, edição e exclusão de produtos
+- Upload de fotos via ImgBB
+- Marcação de produtos como vendidos
+- Produtos vendidos aparecem por último no catálogo
 
-## React Compiler
+## Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- [Firebase Firestore](https://firebase.google.com/) — banco de dados
+- [Firebase Authentication](https://firebase.google.com/) — login do admin
+- [ImgBB API](https://imgbb.com/api) — hospedagem de imagens
+- [React Router DOM](https://reactrouter.com/) — navegação
 
-## Expanding the ESLint configuration
+## Como rodar localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
+npm run dev
+```
+
+## Variáveis de ambiente
+
+Crie um arquivo `.env` na raiz do projeto com suas chaves de API
+
+## Deploy
+
+Esse projeto está hospedado na [Vercel](https://vercel.com/). 
+
+---
+
+Desenvolvido por ANNA BEATRIZ SILVA LIMA· 
